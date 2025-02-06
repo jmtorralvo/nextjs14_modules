@@ -1,0 +1,22 @@
+{
+	"name": "routing-rendering",
+	"version": "0.1.0",
+	"private": true,
+	"scripts": {
+		"dev": "next dev",
+		"build": "next build",
+		"start": "next start",
+		"lint": "next lint"
+	},
+	"dependencies": {
+		"@tanstack/react-query": "^5.65.1",
+		"@tanstack/react-query-devtools": "^5.65.1",
+		"better-sqlite3": "^11.8.1",
+		"next": "^15.1.6",
+		"react": "^18",
+		"react-dom": "^18"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "^1.9.4"
+	}
+}

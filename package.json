@@ -2,6 +2,21 @@
 	"name": "nextjs15_modules",
 	"module": "index.ts",
 	"type": "module",
+	"scripts": {
+		"caching:dev": "bun run --cwd packages/caching dev",
+		"caching:build": "bun run --cwd packages/caching build",
+		"caching:start": "bun run --cwd packages/caching start",
+		"caching:be:start": "bun run --cwd packages/caching/backend start",
+		"mutations:dev": "bun run --cwd packages/mutations dev",
+		"mutations:build": "bun run --cwd packages/mutations build",
+		"mutations:start": "bun run --cwd packages/mutations start",
+		"optimization:dev": "bun run --cwd packages/optimization dev",
+		"optimization:build": "bun run --cwd packages/optimization build",
+		"optimization:start": "bun run --cwd packages/optimization start",
+		"auth:dev": "bun run --cwd packages/auth dev",
+		"auth:build": "bun run --cwd packages/auth build",
+		"auth:start": "bun run --cwd packages/auth start"
+	},
 	"devDependencies": {
 		"@types/bun": "latest"
 	},

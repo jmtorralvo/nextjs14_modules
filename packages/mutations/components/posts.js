@@ -2,6 +2,8 @@
 
 import { togglePostLikeStatus } from "@/actions/posts";
 import { formatDate } from "@/lib/format";
+import { imageLoader } from "@/lib/image-loader";
+import Image from "next/image";
 import { useOptimistic } from "react";
 import LikeButton from "./like-icon";
 
@@ -9,7 +11,15 @@ function Post({ post, action }) {
 	return (
 		<article className="post">
 			<div className="post-image">
-				<img src={post.image} alt={post.title} />
+				{post.image && (
+					<Image
+						fill
+						loader={imageLoader}
+						src={post.image}
+						alt={post.title}
+						quality={50}
+					/>
+				)}
 			</div>
 			<div className="post-content">
 				<header>

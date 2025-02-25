@@ -1,16 +1,9 @@
-import Header from "@/components/header";
 import "./globals.css";
 
-export const metadata = {
-	title: "NextPosts",
-	description: "Browse and share amazing posts.",
-};
-
-export default function RootLayout({ children }) {
+export default function LoginRootLayout({ children }) {
 	return (
 		<html lang="en">
 			<body>
-				<Header />
 				<main>{children}</main>
 			</body>
 		</html>

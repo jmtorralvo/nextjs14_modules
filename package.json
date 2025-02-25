@@ -15,7 +15,8 @@
 		"optimization:start": "bun run --cwd packages/optimization start",
 		"auth:dev": "bun run --cwd packages/auth dev",
 		"auth:build": "bun run --cwd packages/auth build",
-		"auth:start": "bun run --cwd packages/auth start"
+		"auth:start": "bun run --cwd packages/auth start",
+		"release": "semantic-release"
 	},
 	"devDependencies": {
 		"@types/bun": "latest"
@@ -23,5 +24,9 @@
 	"workspaces": ["packages/*"],
 	"peerDependencies": {
 		"typescript": "^5.0.0"
+	},
+	"dependencies": {
+		"@semantic-release/github": "^11.0.1",
+		"semantic-release-monorepo": "^8.0.2"
 	}
 }
